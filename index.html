@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Drop Block Game</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <!-- Correct link to BS and JQuerry -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+        <script src="javascript.js" type="text/javascript"></script>
+        <link href="style.css" rel="stylesheet" type="text/css"/>    
+    </head>
+    
+    <body>
+        
+        <div class="jumbotron text-center headerBC">
+            <h1>Drop Block Game</h1>
+        </div>
+            
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-left">
+                    <p>
+                        <h3>Instruction:</h3>
+                        <h5>The game will automatically start at easy level. Players can select difficulty level in the drop down list then click "Start Game".</h5>
+                        <h5>Clicking the block to remove it and connected blocks. Destroy all blocks to complete the game.</h5>
+                    </p>
+                </div>
+            </div>
+
+            <div id="status"></div>
+
+            <div class="row">
+                <div class="col-md-12"  id="table">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-1 text-right">
+                    <button id="Start">Start Game</button>
+                </div>
+                <div class="col-md-2 text-left">
+                    <select id="Level">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="col-md-2 ">                 
+                    <label id="labelScore" >0</label>
+                </div>
+                <div class="col-md-2 col-md-offset-2">
+                    <label id="labelNeighbor">0 connecting block(s)</label>
+                </div>
+            </div>    
+            
+        </div>
+        
+        <div class="container-fluid text-center">
+            2016 by Phong Nguyen
+        </div>
+    </body>
+    
+</html>
